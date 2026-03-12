@@ -5,6 +5,9 @@ import Mazinger
 
 # Añadir aquí las importaciones del armamento.
 import Planeador
+import RayosFotónicos
+import FuegoPecho
+import PuñosFuera
 
 # pygame setup
 pygame.init()
@@ -16,6 +19,12 @@ maz=Mazinger.Mazinger(screen)
 # Incorporar aquí el armamento con pares de líneas como éstos.
 planeador= Planeador.Planeador()
 maz.incorpora(planeador)
+rayos= RayosFotónicos.RayosFotónicos()
+maz.incorpora(rayos)
+fuego= FuegoPecho.FuegoPecho()
+maz.incorpora(fuego)
+puños= PuñosFuera.PuñosFuera()
+maz.incorpora(puños)
 
 
 while running:
